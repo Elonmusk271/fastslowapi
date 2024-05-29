@@ -11,6 +11,9 @@ function delayMiddleware(req, res, next) {
 app.get('/fast', (req, res) => {
     res.send('This is the fast endpoint');
 });
+app.get('/test', (req, res) => {
+    res.send('This is the test endpoint');
+});
 
 // Endpoint that responds after some delay
 app.get('/slow', delayMiddleware, (req, res) => {
