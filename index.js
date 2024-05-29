@@ -12,7 +12,7 @@ app.get('/fast', (req, res) => {
     res.send('This is the fast endpoint');
 });
 app.get('/test', (req, res) => {
-    res.send('This is the test ');
+    res.send('This is the testing api ');
 });
 
 // Endpoint that responds after some delay
